@@ -1,7 +1,9 @@
 require 'sinatra'
 
+
+
 get '/' do
-  "Hello world!"
+  File.read(File.join('public', 'hello.txt'))
 end
 
 # blocks of code communicating with HTTP = internet
